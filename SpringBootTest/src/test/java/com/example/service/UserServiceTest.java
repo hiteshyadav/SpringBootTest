@@ -12,25 +12,28 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 import com.example.entity.USERS;
 
-//@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+/*
+ * In this case, entire spring application context will be loaded.
+ */
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class UserServiceTest {
 
-//	@Autowired
+	@Autowired
 	UserService userService;
 
-//	@Test
+	@Test
 	public void getUserTest() {
 		assertNotNull(userService);
 
 	}
 
-//	@Test
+	@Test
 	public void getUserByIdTest() {
 		USERS u = userService.getUser(1);
 		assertEquals(u.getName(), "USA", "Get user by Id is not working");
 	}
 
-//	@Test
+	@Test
 	public void getAllUserTest() {
 		List<USERS> users = userService.getAllUser();
 		for (USERS u : users) {
