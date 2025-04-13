@@ -17,7 +17,7 @@ public class UserServiceBehaviourTest {
 		
 		service.getAllUser();
 		
-		// behaviour testing like findall method is called or not;
+		// behaviour testing, to check if  find all method is called or not;
 		verify(mockDto,times(1)).findAll();
 	}
 }
