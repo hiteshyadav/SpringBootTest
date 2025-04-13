@@ -3,7 +3,9 @@ package com.example.value;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
-
+/*
+ * Just to test value object's equal method.
+ */
 public class UserDetailsTest {
 
 	@Test

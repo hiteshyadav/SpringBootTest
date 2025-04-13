@@ -1,7 +1,6 @@
 package com.example.service;
 
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
